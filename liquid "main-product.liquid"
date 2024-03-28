@@ -1,0 +1,16 @@
+ <div class="product_images">
+  <div class="main_images">
+    {% for image in product.images %}
+    <div class="prd_img">
+      <img src="{{ image | img_url: "1200x" }}"/>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="thumb_images">
+    {% for image in product.images %}
+    <div class="prd_img">
+      <img src="{{ image | img_url: "200x" }}"/>
+    </div>
+    {% endfor %}
+              </div>
+                </div>
